@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins";
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+/*--basic reset--*/
+:root {
+  --form-color: #c8d6e5;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*--form design---*/
+input[type="number"] {
+  height: 30px;
+  width: 150px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid blue;
+  text-align: center;
+}
+input[type="submit"] {
+  height: 40px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #005bea;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #005bea;
+  transition: 1s;
+}
+/*---design---*/
+.container {
+  height: 470px;
+  width: 260px;
+  background-color: var(--form-color);
+  border-radius: 12px;
+  padding: 10px;
+  row-gap: 5px;
+}
+.form-container {
+  gap: 5px;
+}
+.form-group h1 {
+  font-size: 1.5rem;
+}
+/*--bmi gauge--*/
+.clock-container {
+  display: flex;
+}
+.clock-container {
+  gap: 5px;
+}
+.clock {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+  border: 3px solid #005bea;
+}
+.level {
+  width: auto;
+  display: flex;
+  position: relative;
+}
+.under-weight {
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  font-size: 0.7rem;
+  transform: rotate(-55deg);
+  padding-bottom: 90px;
+  padding-right: 2px;
+}
+.normal {
+  position: absolute;
+  top: -18px;
+  left: 20px;
+  font-size: 0.7rem;
+  transform: rotate(-25deg);
+  padding-bottom: 180px;
+  padding-left: 60px;
+}
+.over-weight {
+  position: absolute;
+  top: -20px;
+  left: 90px;
+  font-size: 0.7rem;
+  transform: rotate(25deg);
+  padding-left: 20px;
+}
+.obese {
+  position: absolute;
+  top: 22px;
+  left: 160px;
+  font-size: 0.7rem;
+  transform: rotate(60deg);
+  padding-left: 20px;
+}
+.center-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #00c6fb;
+  position: absolute;
+  top: 76px;
+  left: 80px;
+  z-index: 5;
+}
+.hand {
+  width: 45%;
+  height: 3px;
+  background: #353b48;
+  position: absolute;
+  bottom: 2px;
+  left: 5%;
+  border-radius: 10px;
+  transform-origin: right;
+  transition: all 0.5s;
+  transform: rotate(360deg);
+}
+.form-result {
+  display: none;
+}
+#result {
+  margin-top: -30px;
+}
+.gallery {
+  padding-top: 10px;
+}
+.instruction {
+  margin-top: 150px;
+}
